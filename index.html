@@ -16,29 +16,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css2?family=Kalam&display=swap' rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <header>
-    <!-- <div> -->
     <div id="web_name">
       Ania Socjusz&emsp;&emsp;<br>&emsp;&emsp;wdech_wydech
     </div>
-    <div id="social_icons">
+    <div id="social_icons">&nbsp;
+      <a target="_blank" rel="noopener noreferrer" href="https://m.me/wdechwydechAnnaSocjusz">
+        <img src="img/me.png" class="social_icon" alt="@"></a>&ensp;
       <a target="_blank" rel="noopener noreferrer" href="mailto:wdech.wydech.zapisy@gmail.com">
         <img src="img/mail.png" class="social_icon" alt="@"></a>&ensp;
       <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/wdechwydechAnnaSocjusz/">
         <img src="img/fb.png" class="social_icon" alt="FB"></a>&ensp;
       <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/wdech_wydech/">
         <img src="img/insta.png" class="social_icon" alt="Insta"></a>
-      <!-- </div> -->
+      <!-- 
+      <a target="_blank" rel="noopener noreferrer" href="mailto:wdech.wydech.zapisy@gmail.com">
+        <i class="fa fa-envelope-o" aria-hidden="true" style="font-size:48px"></i></a> &nbsp;
+
+      <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/wdech_wydech/">
+        <i class="fa fa-instagram" aria-hidden="true" style="font-size:48px"></i></a> &nbsp;
+
+      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/wdechwydechAnnaSocjusz/">
+        <i class="fa fa-facebook-square" aria-hidden="true" style="font-size:48px"></i></a> -->
+
+      <!-- <i class="fa fa-bars" aria-hidden="true" style="font-size:48px"></i> -->
     </div>
   </header>
   <nav>
     <ol>
       <li>
         <a class="menu_label" id="lstart" href="#">
-          <div>Start</div>
+          <div>Start </div>
         </a>
       </li>
       <li>
@@ -88,17 +101,18 @@
       <div class="content_text" id="dabout">
         <h1>O MNIE<br></h1>
         <p>
-        Jestem certyfikowanym trenerem:
+          Jestem certyfikowanym trenerem:
         <ul>
           <li>fitnessu</li>
           <li>tańca sportowego</li>
           <li>sportów siłowych</li>
         </ul>
-        Ukończyłam kilkanaście kursów w zakresie ruchu oraz żywienia i mam niemal 20-ścia lat instruktorskiego doświadczenia.</p>
+        Ukończyłam kilkanaście kursów w zakresie ruchu oraz żywienia i mam niemal 20-ścia lat instruktorskiego
+        doświadczenia.</p>
         <p>Teraz to, co dla mnie najważniejsze:<br>
-        Ruch jest moim życiem. Taniec, fitness, sporty siłowe zaprowadziły mnie tu,
-        gdzie jestem. Nauczyłam się słuchać mojego ciała i szanować jego potrzeby. Mam wiedzę i doświadczenie. I tym
-        właśnie chcę się z Tobą dzielić.</p>
+          Ruch jest moim życiem. Taniec, fitness, sporty siłowe zaprowadziły mnie tu,
+          gdzie jestem. Nauczyłam się słuchać mojego ciała i szanować jego potrzeby. Mam wiedzę i doświadczenie. I tym
+          właśnie chcę się z Tobą dzielić.</p>
       </div>
       <div class="content_text" id="dclasses">
         <h1>JAK WYGLĄDAJĄ ZAJĘCIA?</h1>
@@ -117,7 +131,7 @@
         <h1>Godziny:</h1>
         <table>
           <tr>
-            <td rowspan="2">WF 4 Adults</td>
+            <td rowspan="2">Strong<br>&emsp;&<br>Biutiful</td>
             <td>poniedziałek</td>
             <td>18:30 - 19:30</td>
             <td rowspan="2">
@@ -132,7 +146,7 @@
 
           </tr>
           <tr>
-            <td>choreo</td>
+            <td>Densing Qłin <br>(choreo)</td>
             <td>wtorek</td>
             <td>20:00 - 21:00</td>
             <td>
@@ -149,7 +163,9 @@
       <div class="content_text" id="dcontact">
         <h1>ZAPISY - PYTANIA - KONTAKT</h1>
         <br><a target="_blank" rel="noopener noreferrer" href="mailto:wdech.wydech.zapisy@gmail.com">
-          wdech.wydech.zapisy@gmail.com</a><br><br>
+          wdech.wydech.zapisy@gmail.com</a><br>
+        <br><a target="_blank" rel="noopener noreferrer" href="https://m.me/wdechwydechAnnaSocjusz">
+          Messenger: wdechwydechAnnaSocjusz</a><br><br>
         Jeżeli chcesz porozmawiać przez telefon - napisz proszę maila i ustalimy najlepszy termin 🙂<br>
       </div>
     </main>
@@ -161,11 +177,6 @@
 </body>
 
 <script>
-  // const queryString = window.location.search;
-  // console.log(queryString);
-  // const urlParams = new URLSearchParams(queryString);
-  // const site = urlParams.get('site');
-
   const button_color_css = "background-color: rgba(200, 200, 200, 0.95);"
   document.getElementById("lstart").firstElementChild.style.cssText = button_color_css;
   document.getElementById("lstart").addEventListener("click", function () {

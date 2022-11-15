@@ -1,41 +1,10 @@
-/* COLORS */
-/* body {
-  color: #141000;
-  background-color: white;
-}
-
-header,
-footer {
-  background-color: #dee0e3;
-}
-
-nav>ol>li>div {
-  background-color: #FCC201;
-}
-
-nav>ol>li>div:hover {
-  background-color: #FED448;
-}
-
-header {
-  border-bottom-style: solid;
-  border-bottom-color: #c8cbd0;
-  border-bottom-width: 1px;
-}
-
-footer {
-  border-top-style: solid;
-  border-top-color: #c8cbd0;
-  border-top-width: 1px;
-} */
-
 body {
   color: #291f00;
   background-color: white;
 }
 
 header,
-footer {
+footer, nav {
   background-color: #FCC201;
 }
 
@@ -64,13 +33,16 @@ a {
   text-decoration: none;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 3px solid black;
   border-collapse: collapse;
   font-size: 20px;
   font-weight: 600;
 }
-td{
+
+td {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -81,7 +53,7 @@ td{
 /* @media only screen and (min-width: 1025px) and (max-width: 1280px) { */
 @media only screen and (min-width: 1025px) {
   nav {
-    width: calc(100% - 168px - 280px);
+    width: calc(100% - 218px - 280px);
     margin-right: 168px;
     margin-left: 280px;
   }
@@ -92,11 +64,14 @@ td{
 
   nav>ol>li>a>div {
     height: 79px;
-    margin-top: -80px;
+  }
+
+  header {
+    margin-bottom: -80px;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
     width: 100%;
     height: 40px;
@@ -109,11 +84,14 @@ td{
 
   nav>ol>li>a>div {
     height: 39px;
-    margin-top: -40px;
+  }
+
+  header {
+    margin-bottom: -40px;
   }
 
   #container {
-    min-height: calc(100vh - 122px);
+    min-height: calc(100vh - 170px);
   }
 
   #social_icons {
@@ -154,21 +132,18 @@ main {
 }
 
 #social_icons {
-  /* width: 110px; */
   float: right;
-  /* padding-top: 6px; */
-  /* height: calc(100% - 6px); */
   height: 100%;
   /* background-color: aqua; */
-  padding-left: 20px;
-  padding-right: 10px;
-  /* background-color: rgba(200, 202, 208, 0.95); */
+  /* padding-left: 20px;
+  padding-right: 10px; */
+  /* background-color: rgba(200, 202, 208, 0.4); */
+  width: 218px;
 }
 
 #web_name {
-  /* font-family: 'Reenie Beanie', cursive; */
-  /* font-family: 'Kalam'; */
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 1.625em;
   font-weight: 600;
   overflow: hidden;
   white-space: nowrap;
