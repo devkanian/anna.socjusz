@@ -1,11 +1,14 @@
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) and (orientation: portrait){
+
     div {
       /* background-color: orange; */
     }
-    header{
+
+    header {
       height: 122px;
     }
-    #web_name{
+
+    #web_name {
       width: 100%;
       height: 70px;
       display: table-cell;
@@ -13,7 +16,8 @@
       border-bottom-style: solid;
       border-bottom-width: 1px;
     }
-    #social_icons{
+
+    #social_icons {
       width: 100%;
       display: table-row;
       padding: 5px;
@@ -21,22 +25,23 @@
       border-bottom-style: solid;
       border-bottom-width: 1px;
     }
-    #social_icon{
+
+    #social_icon {
       display: table-cell;
     }
+
     nav {
       width: 100%;
       height: 40px;
       border-bottom-style: solid;
       border-bottom-width: 1px;
     }
+
     nav>ol>li>a>div {
       height: 39px;
     }
-  
+
     #container {
       min-height: calc(100vh - 170px);
     }
-    }
-
   }
