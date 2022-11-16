@@ -1,32 +1,31 @@
-body {
-  color: #291f00;
-  background-color: white;
-}
+:root{
 
-header,
-footer,
-nav {
-  background-color: #FCC201;
+  --color-background: white;
+  --color-font: #291f00;
+  --color-main: #FCC201;
+  --color-button-hoover: #c8c8c880;
+  --color-button-active: #c8c8c8f2;
 }
 
 nav>ol>li>a>div {
-  /* background-color: #c8cad0; */
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: var(--color-button-inactive);
 }
 
 nav>ol>li>a>div:hover {
-  background-color: rgba(200, 202, 208, 0.5);
+  background-color: var(--color-button-hoover);
 }
 
 html,
 body {
   /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Sono', sans-serif; */
   /* font-family: 'Kalam'; */
   font-family: 'Roboto', sans-serif;
-  /* font-family: 'Sono', sans-serif; */
-  font-size: large;
+  font-size: 2vh;
   margin: 0;
   padding: 0;
+  color:var(--color-font);
+  background-color: var(--color-background);
 }
 
 a {
@@ -39,7 +38,7 @@ th,
 td {
   border: 3px solid black;
   border-collapse: collapse;
-  font-size: 20px;
+  font-size: 2vh;
   font-weight: 600;
 }
 
@@ -162,6 +161,8 @@ main {
 }
 
 nav {
+  background-color: var(--color-main);
+
   height: 0px;
   display: table;
   table-layout: fixed;
@@ -209,6 +210,7 @@ nav>ol>li>a:hover {
 
 header {
   height: 80px;
+  background-color: var(--color-main);
 }
 
 header>div {
@@ -227,9 +229,10 @@ main>div {
 }
 
 footer {
+  background-color: var(--color-main);
   height: 50px;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 32px;
+  font-size: 4vh;
   font-weight: 600;
   text-align: right;
 }

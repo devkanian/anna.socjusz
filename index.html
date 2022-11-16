@@ -13,11 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css2?family=Kalam&display=swap' rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+  <!-- <link href='https://fonts.googleapis.com/css2?family=Kalam&display=swap' rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Sono&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
@@ -162,11 +162,13 @@
       </div>
       <div class="content_text" id="dcontact">
         <h1>ZAPISY - PYTANIA - KONTAKT</h1>
+        e-mail:
         <br><a target="_blank" rel="noopener noreferrer" href="mailto:wdech.wydech.zapisy@gmail.com">
-          wdech.wydech.zapisy@gmail.com</a><br>
+          wdech.wydech.zapisy@gmail.com</a><br><br>
+        messenger: 
         <br><a target="_blank" rel="noopener noreferrer" href="https://m.me/wdechwydechAnnaSocjusz">
-          Messenger: wdechwydechAnnaSocjusz</a><br><br>
-        Jeżeli chcesz porozmawiać przez telefon - napisz proszę maila i ustalimy najlepszy termin 🙂<br>
+         wdechwydechAnnaSocjusz</a><br><br>
+        <p>Jeżeli chcesz porozmawiać przez telefon - napisz proszę maila i ustalimy najlepszy termin 🙂</p>
       </div>
     </main>
   </div>
@@ -177,7 +179,7 @@
 </body>
 
 <script>
-  const button_color_css = "background-color: rgba(200, 200, 200, 0.95);"
+  const button_color_css = "background-color: var(--color-button-active);"
   document.getElementById("lstart").firstElementChild.style.cssText = button_color_css;
   document.getElementById("lstart").addEventListener("click", function () {
     Array.from(document.getElementsByClassName("content_text")).forEach(
