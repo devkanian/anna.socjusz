@@ -1,42 +1,52 @@
-  @media only screen and (max-width: 768px) {
-    div {
-      /* background-color: orange; */
+  @media only screen and (max-width: 1024px) and (orientation: portrait) {
+    header {
+      /* height: 122px; */
+      height: calc(19vh + 2px);
     }
-    header{
-      height: 122px;
-    }
-    #web_name{
+
+    #web_name {
       width: 100%;
-      height: 70px;
+      height: 12vh;
+      font-size: 5vh;
       display: table-cell;
       padding: 0;
       border-bottom-style: solid;
       border-bottom-width: 1px;
     }
-    #social_icons{
+
+    #social_icons {
       width: 100%;
       display: table-row;
-      padding: 5px;
-      height: 40px;
+      padding: 1vh;
+      height: 5vh;
       border-bottom-style: solid;
       border-bottom-width: 1px;
-    }
-    #social_icon{
-      display: table-cell;
-    }
-    nav {
-      width: 100%;
-      height: 40px;
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
-    }
-    nav>ol>li>a>div {
-      height: 39px;
-    }
-  
-    #container {
-      min-height: calc(100vh - 170px);
-    }
     }
 
+    .social_icon {
+      height: 5vh;
+      width: 5vh;
+    }
+
+    nav {
+      width: 100%;
+      height: 5vh;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+
+    nav>ol>li>a>div {
+      height: calc(5vh + 2px);
+      border-bottom-width: 0;
+      border-top-width: 0;
+      font-size: 2vh;
+    }
+
+    #container {
+      min-height: calc(100vh - 214px);
+    }
+    
+    footer{
+      height: 7vh;
+    }
   }
