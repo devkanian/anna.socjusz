@@ -1,10 +1,9 @@
-:root{
-
+:root {
   --color-background: white;
   --color-font: #291f00;
   --color-main: #FCC201;
-  --color-button-hoover: #c8c8c880;
-  --color-button-active: #c8c8c8f2;
+  --color-button-hoover: #e8e8e880;
+  --color-button-active: #c8c8c8;
 }
 
 nav>ol>li>a>div {
@@ -17,14 +16,11 @@ nav>ol>li>a>div:hover {
 
 html,
 body {
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Sono', sans-serif; */
-  /* font-family: 'Kalam'; */
   font-family: 'Roboto', sans-serif;
   font-size: 2vh;
   margin: 0;
   padding: 0;
-  color:var(--color-font);
+  color: var(--color-font);
   background-color: var(--color-background);
 }
 
@@ -47,65 +43,57 @@ td {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-
 }
 
+
 /* @media only screen and (min-width: 1025px) and (max-width: 1280px) { */
-@media only screen and (min-width: 1025px) {
+
+@media only screen and (min-width: 1201px) {
   nav {
     width: calc(100% - 218px - 280px);
     margin-right: 168px;
     margin-left: 280px;
   }
-
   #container {
     min-height: calc(100vh - 130px);
   }
-
+  .content_text {
+    min-height: calc(98vh - 130px);
+  }
   nav>ol>li>a>div {
     height: 79px;
   }
-
   header {
     margin-bottom: -80px;
   }
-
-  #web_name{
+  #web_name {
     margin-right: -300px;
   }
 }
 
+
 /* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { */
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
   nav {
     width: 100%;
     height: 40px;
   }
-
   header {
     padding-bottom: 40px;
     height: 40px;
+    margin-bottom: -40px;
   }
-
   nav>ol>li>a>div {
     height: 39px;
   }
-
-  header {
-    margin-bottom: -40px;
-  }
-
   #container {
     min-height: calc(100vh - 170px);
   }
-
-  #social_icons {
-    border-left-style: solid;
-    border-color: rgba(0, 0, 0, 0.1);
-    border-width: 1px;
+  .content_text {
+    min-height: calc(98vh - 170px);
   }
 }
-
 
 #container {
   max-width: 1024px;
@@ -123,51 +111,39 @@ main {
   flex: 1;
 }
 
-.social_icon {
-  width: 40px;
-  height: 40px;
-  /* filter: invert(1); */
+#social_icons>a:hover {
+  text-shadow: 0.2vh 0.2vh 0.4vh #00000080;
 }
 
-.social_icon:hover {
-  width: 38px;
-  height: 38px;
-  margin-left: 1px;
-  margin-right: 1px;
+#social_icons:a {
+  width: 6vh;
 }
 
 #social_icons {
   float: right;
-  height: 100%;
-  /* background-color: aqua; */
-  /* padding-left: 20px;
-  padding-right: 10px; */
-  /* background-color: rgba(200, 202, 208, 0.4); */
   width: 218px;
   margin-left: -200px;
+  font-size: 5vh;
+  justify-content: space-around;
 }
 
 #web_name {
-  /* font-size: 26px; */
-  font-size: 1.625em;
+  font-size: 28px;
   font-weight: 600;
-  /* overflow: hidden; */
+  overflow: hidden;
   white-space: nowrap;
-  /* text-align: right; */
   height: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 250px;
 }
 
 nav {
   background-color: var(--color-main);
-
+  font-size: 28px;
   height: 0px;
   display: table;
   table-layout: fixed;
-  font-size: 20px;
-  /* background-color: aqua; */
 }
 
 nav>ol {
@@ -184,13 +160,10 @@ nav>ol>li {
 }
 
 nav>ol>li>a>div {
-
   overflow: hidden;
   white-space: nowrap;
-
   font-size: 16x;
   font-weight: bold;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,10 +188,8 @@ header {
 
 header>div {
   height: 100%;
-
   display: flex;
   align-items: center;
-
   float: left;
   text-align: center;
 }
@@ -232,7 +203,7 @@ footer {
   background-color: var(--color-main);
   height: 50px;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 4vh;
+  font-size: 3.2vh;
   font-weight: 600;
   text-align: right;
 }
@@ -249,4 +220,16 @@ footer>div:first-child {
 
 #dstart {
   display: block;
+}
+
+.content_text {
+  box-sizing: border-box;
+  /* border-style: solid;
+  border-radius: 1.5em;
+  border-width: .5em;
+  border-color: #000000; */
+  /* background-color: #F9F9F9; */
+  /* background-color: rgb(156, 30, 30); */
+  /* width: 95%; */
+  margin: 1vh auto;
 }
